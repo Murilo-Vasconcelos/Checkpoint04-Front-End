@@ -1,0 +1,99 @@
+:root {
+  --preto: #121212;
+  --bege: #fff3ef;
+  --botao: #b4aaa3;
+  --destaque: #7fb3ae;
+  --gap: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--preto);
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner {
+  background: var(--preto);
+  padding: 70px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-grid {
+  width: 100%;
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "foto foto"
+    "texto fotos";
+  gap: var(--gap);
+}
+
+.banner-img {
+  grid-area: foto;
+  aspect-ratio: 16 / 7;
+}
+
+.banner-texto {
+  grid-area: texto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.btn {
+    align-self: flex-start;
+    background: var(--botao);
+    color: var(--preto);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 14px 28px;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--destaque);
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+.banner-texto p {
+  color: #f5f2f0;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+
+.banner-fotos {
+  grid-area: fotos;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.banner-fotos img {
+  aspect-ratio: 1 / 1;
+}
+
+@media (max-width: 600px){
+}
