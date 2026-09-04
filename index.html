@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkpoint 04 - Front-end</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP4 - Grid Layout</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <main>
-    <section class="banner">
-      <div class="banner-grid">
+    <main>
+        <section class="destaque">
+            <div class="destaque-grid">
+                <div class="hero">
+                    <img src="images/banner/01.jpg" alt="Cidade litorânea com casas brancas à beira-mar">
+                </div>
 
-        <img src="images/banner/01.jpg"
-          alt="Visto do mar, com um barco de madeira ancorado na baía" class="banner-img">
+                <div class="texto-destaque">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nulla explicabo, quo, modi quod qui atque eaque repellendus
+                        est nisi voluptate facere.
+                    </p>
+                    <a href="#galeria" class="botao">Saiba mais</a>
+                </div>
 
-        <div class="banner-texto">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo, quo, modi qui atque eaque
-            repellendus est nisi voluptate facere.</p>
-          <button class="btn">Saiba mais</button>
-        </div>
+                <div class="mini-galeria">
+                    <img src="images/banner/04.jpg" alt="Rua estreita com vista para o mar">
+                    <img src="images/banner/03.jpg" alt="Igreja branca com cúpula azul em frente ao mar">
+                    <img src="images/banner/02.jpg" alt="Casa branca com varanda azul e flores vermelhas">
+                </div>
+            </div>
+        </section>
 
-        <div class="banner-fotos">
-          <img src="images/banner/03.jpg" alt="Casas branca com mesa e cadeiras de madeira">
-          <img src="images/banner/02.jpg" alt="Igreja azul de frente para o mar">
-          <img src="images/banner/04.jpg" alt="Varanda azul com flores vermelhas">
-        </div>
-      </div>
+        <section class="galeria-mar" id="galeria" aria-label="Galeria de paisagens do mar">
+            <div class="galeria-grid">
+                <img src="images/sea/01.jpg" alt="Praia com pedras e mar calmo">
+                <img class="foto-alta" src="images/sea/03.jpg" alt="Praia de água azul-turquesa vista de cima">
+                <img src="images/sea/01.jpg" alt="Praia rochosa sob céu com nuvens">
+                <img class="foto-alta" src="images/sea/03.jpg" alt="Faixa de areia clara ao lado do mar azul">
+                <img src="images/sea/01.jpg" alt="Formações rochosas em uma praia tranquila">
+                <img src="images/sea/02.jpg" alt="Vista do oceano a partir de uma trilha de areia">
+                <img src="images/sea/02.jpg" alt="Mar azul no horizonte visto da costa">
+                <img src="images/sea/02.jpg" alt="Paisagem litorânea com vegetação e oceano ao fundo">
+            </div>
+        </section>
+    </main>
+
+    <footer class="creditos">
+        
+        <p>Nome: Murilo Vasconcelos Gomes &nbsp; | &nbsp; RM: 570941</p>
+    </footer>
 </body>
 </html>
